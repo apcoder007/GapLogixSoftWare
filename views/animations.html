@@ -1,0 +1,348 @@
+<div class="container ng-scope" data-ng-controller="animCtrl as actrl">
+    <div class="block-header">
+        <h2>Pure CSS3 Animations</h2>
+
+        <ul class="actions">
+            <li>
+                <a href="">
+                    <i class="zmdi zmdi-trending-up"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="zmdi zmdi-check-all"></i>
+                </a>
+            </li>
+            <li class="dropdown" uib-dropdown="">
+                <a href="" uib-dropdown-toggle="" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                    <i class="zmdi zmdi-more-vert"></i>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li>
+                        <a href="">Refresh</a>
+                    </li>
+                    <li>
+                        <a href="">Manage Widgets</a>
+                    </li>
+                    <li>
+                        <a href="">Widgets Settings</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="card animation-demo">
+                <div class="card-header">
+                    <h2>Attention Seekers <small>Click on the buttons below to start the animation</small></h2>
+                </div>
+
+                <div class="card-body card-padding">
+                    <img src="img/headers/sm/1.png" alt="" ng-class="actrl.ca" class="animated" id="attentionSeeker">
+
+                    <div class="row">
+                        <!-- ngRepeat: w in actrl.attentionSeekers --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.attentionSeekers">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">bounce</button>
+                        </div><!-- end ngRepeat: w in actrl.attentionSeekers --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.attentionSeekers">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">flash</button>
+                        </div><!-- end ngRepeat: w in actrl.attentionSeekers --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.attentionSeekers">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">pulse</button>
+                        </div><!-- end ngRepeat: w in actrl.attentionSeekers --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.attentionSeekers">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">rubberBand</button>
+                        </div><!-- end ngRepeat: w in actrl.attentionSeekers --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.attentionSeekers">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">shake</button>
+                        </div><!-- end ngRepeat: w in actrl.attentionSeekers --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.attentionSeekers">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">swing</button>
+                        </div><!-- end ngRepeat: w in actrl.attentionSeekers --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.attentionSeekers">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">tada</button>
+                        </div><!-- end ngRepeat: w in actrl.attentionSeekers --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.attentionSeekers">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">wobble</button>
+                        </div><!-- end ngRepeat: w in actrl.attentionSeekers -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card animation-demo">
+                <div class="card-header">
+                    <h2>Flippers <small>Click on the buttons below to start the animation</small></h2>
+                </div>
+
+                <div class="card-body card-padding">
+                    <img src="img/headers/sm/6.png" alt="" ng-class="actrl.ca" class="animated" id="flippers">
+
+                    <div class="row">
+                        <!-- ngRepeat: w in actrl.flippers --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.flippers">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">flip</button>
+                        </div><!-- end ngRepeat: w in actrl.flippers --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.flippers">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">flipInX</button>
+                        </div><!-- end ngRepeat: w in actrl.flippers --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.flippers">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">flipInY</button>
+                        </div><!-- end ngRepeat: w in actrl.flippers --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.flippers">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">flipOutX</button>
+                        </div><!-- end ngRepeat: w in actrl.flippers --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.flippers">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">flipOutY</button>
+                        </div><!-- end ngRepeat: w in actrl.flippers -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card animation-demo">
+                <div class="card-header">
+                    <h2>Light Speed <small>Click on the buttons below to start the animation</small></h2>
+                </div>
+
+                <div class="card-body card-padding">
+                    <img src="img/headers/sm/7.png" alt="" ng-class="actrl.ca" class="animated" id="lightSpeed">
+
+                    <div class="row">
+                        <!-- ngRepeat: w in actrl.lightSpeed --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.lightSpeed">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">lightSpeedIn</button>
+                        </div><!-- end ngRepeat: w in actrl.lightSpeed --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.lightSpeed">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">lightSpeedOut</button>
+                        </div><!-- end ngRepeat: w in actrl.lightSpeed -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card animation-demo">
+                <div class="card-header">
+                    <h2>Specials <small>Click on the buttons below to start the animation</small></h2>
+                </div>
+
+                <div class="card-body card-padding">
+                    <img src="img/headers/sm/1.png" alt="" ng-class="actrl.ca" class="animated" id="special">
+
+                    <div class="row">
+                        <!-- ngRepeat: w in actrl.special --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.special">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">hinge</button>
+                        </div><!-- end ngRepeat: w in actrl.special --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.special">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">rollIn</button>
+                        </div><!-- end ngRepeat: w in actrl.special --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.special">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">rollOut</button>
+                        </div><!-- end ngRepeat: w in actrl.special -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card animation-demo">
+                <div class="card-header">
+                    <h2>Bouncing Entrances <small>Click on the buttons below to start the animation</small></h2>
+                </div>
+
+                <div class="card-body card-padding">
+                    <img src="img/headers/sm/2.png" alt="" ng-class="actrl.ca" class="animated" id="bouncingEntrance">
+
+                    <div class="row">
+                        <!-- ngRepeat: w in actrl.bouncingEntrance --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.bouncingEntrance">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">bounceIn</button>
+                        </div><!-- end ngRepeat: w in actrl.bouncingEntrance --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.bouncingEntrance">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">bounceInDown</button>
+                        </div><!-- end ngRepeat: w in actrl.bouncingEntrance --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.bouncingEntrance">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">bounceInLeft</button>
+                        </div><!-- end ngRepeat: w in actrl.bouncingEntrance --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.bouncingEntrance">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">bounceInRight</button>
+                        </div><!-- end ngRepeat: w in actrl.bouncingEntrance --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.bouncingEntrance">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">bounceInUp</button>
+                        </div><!-- end ngRepeat: w in actrl.bouncingEntrance -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card animation-demo">
+                <div class="card-header">
+                    <h2>Bouncing Exits <small>Click on the buttons below to start the animation</small></h2>
+                </div>
+
+                <div class="card-body card-padding">
+                    <img src="img/headers/sm/3.png" alt="" ng-class="actrl.ca" class="animated" id="bouncingExits">
+
+                    <div class="row">
+                        <!-- ngRepeat: w in actrl.bouncingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.bouncingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">bounceOut</button>
+                        </div><!-- end ngRepeat: w in actrl.bouncingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.bouncingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">bounceOutDown</button>
+                        </div><!-- end ngRepeat: w in actrl.bouncingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.bouncingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">bounceOutLeft</button>
+                        </div><!-- end ngRepeat: w in actrl.bouncingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.bouncingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">bounceOutRight</button>
+                        </div><!-- end ngRepeat: w in actrl.bouncingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.bouncingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">bounceOutUp</button>
+                        </div><!-- end ngRepeat: w in actrl.bouncingExits -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card animation-demo">
+                <div class="card-header">
+                    <h2>Rotating Entrances <small>Click on the buttons below to start the animation</small></h2>
+                </div>
+
+                <div class="card-body card-padding">
+                    <img src="img/headers/sm/8.png" alt="" ng-class="actrl.ca" class="animated" id="rotatingEntrances">
+
+                    <div class="row">
+                        <!-- ngRepeat: w in actrl.rotatingEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.rotatingEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">rotateIn</button>
+                        </div><!-- end ngRepeat: w in actrl.rotatingEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.rotatingEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">rotateInDownLeft</button>
+                        </div><!-- end ngRepeat: w in actrl.rotatingEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.rotatingEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">rotateInDownRight</button>
+                        </div><!-- end ngRepeat: w in actrl.rotatingEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.rotatingEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">rotateInUpLeft</button>
+                        </div><!-- end ngRepeat: w in actrl.rotatingEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.rotatingEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">rotateInUpRight</button>
+                        </div><!-- end ngRepeat: w in actrl.rotatingEntrances -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card animation-demo">
+                <div class="card-header">
+                    <h2>Rotating Exits <small>Click on the buttons below to start the animation</small></h2>
+                </div>
+
+                <div class="card-body card-padding">
+                    <img src="img/headers/sm/9.png" alt="" ng-class="actrl.ca" class="animated" id="rotatingExits">
+
+                    <div class="row">
+                        <!-- ngRepeat: w in actrl.rotatingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.rotatingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">rotateOut</button>
+                        </div><!-- end ngRepeat: w in actrl.rotatingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.rotatingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">rotateOutDownLeft</button>
+                        </div><!-- end ngRepeat: w in actrl.rotatingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.rotatingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">rotateOutDownRight</button>
+                        </div><!-- end ngRepeat: w in actrl.rotatingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.rotatingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">rotateOutUpLeft</button>
+                        </div><!-- end ngRepeat: w in actrl.rotatingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.rotatingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">rotateOutUpRight</button>
+                        </div><!-- end ngRepeat: w in actrl.rotatingExits -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card animation-demo">
+                <div class="card-header">
+                    <h2>Fadeing Entrances <small>Click on the buttons below to start the animation</small></h2>
+                </div>
+
+                <div class="card-body card-padding">
+                    <img src="img/headers/sm/4.png" alt="" ng-class="actrl.ca" class="animated" id="fadeingEntrances">
+
+                    <div class="row">
+                        <!-- ngRepeat: w in actrl.fadeingEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeIn</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeInDown</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeInDownBig</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeInLeft</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeInLeftBig</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeInRight</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeInRightBig</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeInUp</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeInBig</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingEntrances -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card animation-demo">
+                <div class="card-header">
+                    <h2>Fadeing Exits <small>Click on the buttons below to start the animation</small></h2>
+                </div>
+
+                <div class="card-body card-padding">
+                    <img src="img/headers/sm/5.png" alt="" ng-class="actrl.ca" class="animated" id="fadeingExits">
+
+                    <div class="row">
+                        <!-- ngRepeat: w in actrl.fadeingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeOut</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeOutDown</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeOutDownBig</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeOutLeft</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeOutLeftBig</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeOutRight</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeOutRightBig</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeOutUp</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.fadeingExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">fadeOutUpBig</button>
+                        </div><!-- end ngRepeat: w in actrl.fadeingExits -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card animation-demo">
+                <div class="card-header">
+                    <h2>Zoom Entrances <small>Click on the buttons below to start the animation</small></h2>
+                </div>
+
+                <div class="card-body card-padding">
+                    <img src="img/headers/sm/4.png" alt="" ng-class="actrl.ca" class="animated" id="zoomEntrances">
+
+                    <div class="row">
+                        <!-- ngRepeat: w in actrl.zoomEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.zoomEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">zoomIn</button>
+                        </div><!-- end ngRepeat: w in actrl.zoomEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.zoomEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">zoomInDown</button>
+                        </div><!-- end ngRepeat: w in actrl.zoomEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.zoomEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">zoomInLeft</button>
+                        </div><!-- end ngRepeat: w in actrl.zoomEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.zoomEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">zoomInRight</button>
+                        </div><!-- end ngRepeat: w in actrl.zoomEntrances --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.zoomEntrances">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">zoomInUp</button>
+                        </div><!-- end ngRepeat: w in actrl.zoomEntrances -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card animation-demo">
+                <div class="card-header">
+                    <h2>Zoom Exits <small>Click on the buttons below to start the animation</small></h2>
+                </div>
+
+                <div class="card-body card-padding">
+                    <img src="img/headers/sm/3.png" alt="" ng-class="actrl.ca" class="animated" id="zoomExits">
+
+                    <div class="row">
+                        <!-- ngRepeat: w in actrl.zoomExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.zoomExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">zoomOut</button>
+                        </div><!-- end ngRepeat: w in actrl.zoomExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.zoomExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">zoomOutDown</button>
+                        </div><!-- end ngRepeat: w in actrl.zoomExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.zoomExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">zoomOutLeft</button>
+                        </div><!-- end ngRepeat: w in actrl.zoomExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.zoomExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">zoomOutRight</button>
+                        </div><!-- end ngRepeat: w in actrl.zoomExits --><div class="col-xs-6 ng-scope" ng-repeat="w in actrl.zoomExits">
+                            <button ng-click="actrl.setAnimation(w.animation, w.target)" class="btn bgm-cyan ng-binding waves-effect">zoomOutUp</button>
+                        </div><!-- end ngRepeat: w in actrl.zoomExits -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</section>
